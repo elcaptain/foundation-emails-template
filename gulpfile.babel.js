@@ -12,6 +12,7 @@ import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
 import colors   from 'colors';
+import gulpimage    from 'gulp-image';
 
 const $ = plugins();
 
@@ -86,7 +87,17 @@ function sass() {
 // Copy and compress images
 function images() {
   return gulp.src(['src/assets/img/**/*', '!src/assets/img/archive/**/*'])
-    .pipe($.imagemin())
+    //.pipe($.imagemin([
+      //imageminMozjpeg({quality: 10})
+  //]))
+    .pipe(gulpimage({mozjpeg: ['-quality', 85], pngquant: true,
+      optipng: false,
+      zopflipng: false,
+      jpegRecompress: false,
+      mozjpeg: true,
+      guetzli: false,
+      gifsicle: false,
+      svgo: false}))
     .pipe(gulp.dest('./dist/assets/img'));
 }
 
