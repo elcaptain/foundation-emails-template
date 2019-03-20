@@ -9,4 +9,4 @@ config.json
 
 etc
 src/assets
-pages/archive
+src/pages/archive

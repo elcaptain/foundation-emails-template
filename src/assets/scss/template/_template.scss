@@ -5,15 +5,24 @@
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: #F5F4E9 !important;
+}
+
+h1, h2, h3, h4, h5 h6 {
+    color: $black;
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: #F5F4E9;
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+a {
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+p.intro {
+    font-size: 20px;
 }
 
 // Full Width Headers
@@ -38,22 +47,104 @@ html,
   background: transparent;
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+// Hero
+.hero {
+    h1, p {color: #ffffff;}
+    background-color: #7C9BCD;
 }
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+//tour list
+img.tour-badge {
+
+    margin-top: 2px;
+}
+
+// quote
+.quote {
+    font-size: 28px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: bold;
+    color: $primary-color;
+}
+.quote-by {
+    font-style: italic;
+}
+
+.seperator {
+    font-size: 60px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+// Footer
+table.footer {
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+    a {
+        color: $primary-color;
+        font-weight: normal;
+        border-bottom-width: 1px;
+    }
+    background: #f7f7f7;
+}
+
+// more Topics
+.more-topics {
+    img {margin-bottom: 18px;}
+    h6 {
+        color: $primary-color;
+        line-height: 1.2;
+        text-align: center;
+    }
+    h5 {
+        color: $black;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.img-photo {
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 15.9022px rgba(0, 0, 0, 0.1), 0px 1.8px 1.59022px rgba(0, 0, 0, 0.22);
+}
+
+img.res { width:100% !important; height:auto; }
+
+p.stats {
+    font-size: 14px;
+    span {
+        white-space: nowrap;
+        Margin-right: 8px;
+    }
+}
+
+
+p.copyright {
+    color: $dark-gray;
+    font-size: 10px;
+    Margin-top: 5px;
+    Margin-bottom: 0;
+    a {
+        color: inherit;
+        font-weight: normal;
+        border: none;
+    }
+}
+
+img#logo {
+    width: 72px;
+    height: 72px;
+}
+
+.nobreak {
+    white-space: nowrap;
+    word-break: keep-all;
 }
